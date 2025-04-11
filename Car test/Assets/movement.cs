@@ -20,8 +20,10 @@ public class Movement : MonoBehaviour
     public Rigidbody Cones;
     public int Bullets;
     public int ConeCount;
+    public float Health;
+    public Rigidbody rb;
 
-    
+
     private Powers[] PowerTypes
             = { new Gun(), new Cone()};
 
@@ -36,25 +38,48 @@ public class Movement : MonoBehaviour
         PowerUpVersion = 0;
         Bullets = 6;
         ConeCount = 3;
+        Health = 250;
+        rb=GetComponent<Rigidbody>();
+
         
     }
 
- void OnTriggerEnter(Collider other)
+ void OnCollisionEnter(Collision other)
         {
-            if (other.CompareTag("Powerup"))
+            if (other.gameObject.CompareTag("Powerup"))
             {
                var PowerType = PowerTypes[Random.Range(0, PowerTypes.Length)]; 
                PowerUpVersion = PowerType.PowerUpVersion;
             }
 
-        } 
+        if (other.gameObject.CompareTag("Car"))
+        {
+                Vector3 ourVel = rb.linearVelocity = transform.forward * speed;
+            Vector3 enemyVel = other.gameObject.GetComponent<Enemy>().rb.linearVelocity;// = transform.forward * speed * GetComponent<Enemy>().speed;
+                Vector3 impactVel = ourVel - enemyVel;
+                float relativeSpeed = impactVel.magnitude;
+                relativeSpeed=Mathf.Clamp(relativeSpeed,0,20);   // lowest highest
+                Health = Health - relativeSpeed * 5;
+           
+        }
+
+    } 
 
     void Update()
     {
+        if (Health <= 0)
+        {
+            speed = 0;
+        }
 
         if (Input.GetKeyDown(KeyCode.R))
         {
             transform.position = new Vector3(-12,3,-12);
+            transform.rotation = new Quaternion(0,0,0,0);
+            if (Health == 0)
+            {
+                Health = 250;
+            }
         }
 
         if (PowerUpVersion == 1)
@@ -69,7 +94,7 @@ public class Movement : MonoBehaviour
                 if (Bullets != 0)
                 {
                     Rigidbody instantiatedProjectile = Instantiate(Bullet, transform.position, transform.rotation) as Rigidbody;
-                instantiatedProjectile.velocity = transform.TransformDirection(new Vector3(0, 0, 150));
+                instantiatedProjectile.linearVelocity = transform.TransformDirection(new Vector3(0, 0, 150));
                 Bullets = Bullets - 1;
                 }
                 
@@ -88,7 +113,7 @@ public class Movement : MonoBehaviour
                 if (ConeCount !=0)
                 {
                     Rigidbody instantiatedProjectile = Instantiate(Cones, transform.position, transform.rotation) as Rigidbody;
-                instantiatedProjectile.velocity = transform.TransformDirection(new Vector3(0, 0, 0));
+                instantiatedProjectile.linearVelocity = transform.TransformDirection(new Vector3(0, 0, 0));
                 ConeCount = ConeCount - 1;
                 }
             }
@@ -99,7 +124,7 @@ public class Movement : MonoBehaviour
             speed = 75;
         }
 
-        transform.position += transform.forward * speed * Time.deltaTime;
+            rb.linearVelocity = transform.forward * speed;
         if (Input.GetKey(KeyCode.W))
         {
             if (speed != SpeedLimit)
@@ -116,7 +141,7 @@ public class Movement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.S))
         {
-            transform.position += transform.forward * -1 * Reversespeed * Time.deltaTime;
+            rb.linearVelocity = transform.forward * -1 * Reversespeed;
             
         }
         if (Input.GetKey(KeyCode.LeftShift))

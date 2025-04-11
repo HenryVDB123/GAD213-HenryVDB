@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\1033595\\Documents\\GitHub\\GAD213-HenryVDB\\Car test\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D612E8D-D035-0646-9331-E8E700A7A733}|Assembly-CSharp.csproj|c:\\users\\1033595\\documents\\github\\gad213-henryvdb\\car test\\assets\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D612E8D-D035-0646-9331-E8E700A7A733}|Assembly-CSharp.csproj|solutionrelative:assets\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D612E8D-D035-0646-9331-E8E700A7A733}|Assembly-CSharp.csproj|c:\\users\\1033595\\documents\\github\\gad213-henryvdb\\car test\\assets\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D612E8D-D035-0646-9331-E8E700A7A733}|Assembly-CSharp.csproj|solutionrelative:assets\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D612E8D-D035-0646-9331-E8E700A7A733}|Assembly-CSharp.csproj|C:\\Users\\1033595\\Documents\\GitHub\\GAD213-HenryVDB\\Car test\\assets\\destroy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D612E8D-D035-0646-9331-E8E700A7A733}|Assembly-CSharp.csproj|solutionrelative:assets\\destroy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\1033595\\Documents\\GitHub\\GAD213-HenryVDB\\Car test\\Assets\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Enemy.cs",
+              "ToolTip": "C:\\Users\\1033595\\Documents\\GitHub\\GAD213-HenryVDB\\Car test\\Assets\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Enemy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T00:12:45.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "movement.cs",
+              "DocumentMoniker": "C:\\Users\\1033595\\Documents\\GitHub\\GAD213-HenryVDB\\Car test\\Assets\\movement.cs",
+              "RelativeDocumentMoniker": "Assets\\movement.cs",
+              "ToolTip": "C:\\Users\\1033595\\Documents\\GitHub\\GAD213-HenryVDB\\Car test\\Assets\\movement.cs",
+              "RelativeToolTip": "Assets\\movement.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T23:11:11.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Destroy.cs",
+              "DocumentMoniker": "C:\\Users\\1033595\\Documents\\GitHub\\GAD213-HenryVDB\\Car test\\Assets\\Destroy.cs",
+              "RelativeDocumentMoniker": "Assets\\Destroy.cs",
+              "ToolTip": "C:\\Users\\1033595\\Documents\\GitHub\\GAD213-HenryVDB\\Car test\\Assets\\Destroy.cs",
+              "RelativeToolTip": "Assets\\Destroy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T23:51:43.95Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
