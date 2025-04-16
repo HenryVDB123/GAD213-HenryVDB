@@ -7,6 +7,9 @@ TagManager:
   - Powerup
   - Obstacle
   - Car
+  - Cone
+  - Bullet
+  - EnemyCar
   layers:
   - Default
   - TransparentFX
@@ -14,7 +17,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Camera
   - 
   - 
   - 

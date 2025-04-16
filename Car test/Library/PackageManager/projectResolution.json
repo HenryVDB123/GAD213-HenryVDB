@@ -31,6 +31,14 @@
       "version": "1.0.0",
       "source": "builtin"
     },
+    "com.unity.postprocessing@3.4.0": {
+      "name": "com.unity.postprocessing",
+      "resolvedPath": "C:\\Users\\1033595\\Documents\\GitHub\\GAD213-HenryVDB\\Car test\\Library\\PackageCache\\com.unity.postprocessing",
+      "fingerprint": "026b2a0827a438e3079df62a60ca03d54961393d",
+      "editorCompatibility": "2019.4.19f1",
+      "version": "3.4.0",
+      "source": "registry"
+    },
     "com.unity.timeline@1.8.7": {
       "name": "com.unity.timeline",
       "resolvedPath": "C:\\Users\\1033595\\Documents\\GitHub\\GAD213-HenryVDB\\Car test\\Library\\PackageCache\\com.unity.timeline",
