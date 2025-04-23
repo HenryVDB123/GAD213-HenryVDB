@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour
     public Rigidbody rb;
     public Rigidbody player;
     public GameObject target;
+    [SerializeField] private float deadclock;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,12 +33,14 @@ public class Enemy : MonoBehaviour
         Vector3 vel = transform.forward * speed;
         rb.linearVelocity = new Vector3(vel.x, rb.linearVelocity.y, vel.z);
 
-        if (speed <= SpeedLimit)
+        if (speed >= SpeedLimit)
         {
             speed = SpeedLimit;
         }
 
-        transform.LookAt(target.transform);
+        Vector3 targetdir = target.transform.position - transform.position;
+        targetdir.y = 0;
+        transform.forward = Vector3.RotateTowards(transform.forward, targetdir.normalized, Time.deltaTime * 1.0f, 1);
 
 
 
@@ -54,8 +57,27 @@ public class Enemy : MonoBehaviour
             if (Health <= 0)
             {
                 Health = 250;
+
             }
         }
+
+        if (Health <= 0)
+        {
+            speed = 0;
+            deadclock += Time.deltaTime;
+
+            if (deadclock >= 2)
+            {
+                transform.position = new Vector3(-61, 39, 181);
+                transform.rotation = new Quaternion(0, 0, 0, 1);
+                rb.linearVelocity = Vector3.zero;
+                rb.angularVelocity = Vector3.zero;
+                Health = 250;
+                deadclock = 0;
+            }
+        }
+
+
 
     }
     void OnCollisionEnter(Collision other)
@@ -78,7 +100,7 @@ public class Enemy : MonoBehaviour
 
         if (other.gameObject.CompareTag("Cone"))
         {
-            speed = speed - 75;
+            speed = speed - 25;
         }
     }
 }

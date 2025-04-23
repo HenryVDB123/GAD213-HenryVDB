@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\1033595\\Documents\\GitHub\\GAD213-HenryVDB\\Car test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7D612E8D-D035-0646-9331-E8E700A7A733}|Assembly-CSharp.csproj|C:\\Users\\1033595\\Documents\\GitHub\\GAD213-HenryVDB\\Car test\\assets\\destroy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D612E8D-D035-0646-9331-E8E700A7A733}|Assembly-CSharp.csproj|solutionrelative:assets\\destroy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D612E8D-D035-0646-9331-E8E700A7A733}|Assembly-CSharp.csproj|c:\\users\\1033595\\documents\\github\\gad213-henryvdb\\car test\\assets\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D612E8D-D035-0646-9331-E8E700A7A733}|Assembly-CSharp.csproj|solutionrelative:assets\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D612E8D-D035-0646-9331-E8E700A7A733}|Assembly-CSharp.csproj|c:\\users\\1033595\\documents\\github\\gad213-henryvdb\\car test\\assets\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7D612E8D-D035-0646-9331-E8E700A7A733}|Assembly-CSharp.csproj|C:\\Users\\1033595\\Documents\\GitHub\\GAD213-HenryVDB\\Car test\\assets\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D612E8D-D035-0646-9331-E8E700A7A733}|Assembly-CSharp.csproj|solutionrelative:assets\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D612E8D-D035-0646-9331-E8E700A7A733}|Assembly-CSharp.csproj|C:\\Users\\1033595\\Documents\\GitHub\\GAD213-HenryVDB\\Car test\\assets\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D612E8D-D035-0646-9331-E8E700A7A733}|Assembly-CSharp.csproj|solutionrelative:assets\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -32,7 +28,7 @@
               "RelativeDocumentMoniker": "Assets\\Car.cs",
               "ToolTip": "C:\\Users\\1033595\\Documents\\GitHub\\GAD213-HenryVDB\\Car test\\Assets\\Car.cs",
               "RelativeToolTip": "Assets\\Car.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAQwDYAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAwwIkAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-16T04:42:38.95Z",
               "IsPinned": true,
@@ -40,28 +36,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Enemy.cs",
               "DocumentMoniker": "C:\\Users\\1033595\\Documents\\GitHub\\GAD213-HenryVDB\\Car test\\Assets\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\Enemy.cs",
               "ToolTip": "C:\\Users\\1033595\\Documents\\GitHub\\GAD213-HenryVDB\\Car test\\Assets\\Enemy.cs",
               "RelativeToolTip": "Assets\\Enemy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T00:12:45.847Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Destroy.cs",
-              "DocumentMoniker": "C:\\Users\\1033595\\Documents\\GitHub\\GAD213-HenryVDB\\Car test\\Assets\\Destroy.cs",
-              "RelativeDocumentMoniker": "Assets\\Destroy.cs",
-              "ToolTip": "C:\\Users\\1033595\\Documents\\GitHub\\GAD213-HenryVDB\\Car test\\Assets\\Destroy.cs",
-              "RelativeToolTip": "Assets\\Destroy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T23:51:43.95Z",
               "EditorCaption": ""
             }
           ]

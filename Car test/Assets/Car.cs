@@ -12,6 +12,7 @@ public class Car : MonoBehaviour
     public int Reversespeed;
     public Vector3 rotations;
     [SerializeField] private float timer;
+    [SerializeField] private float deadclock;
     public TextMeshProUGUI TimeIndicator;
     public int SpeedLimit;
     public bool InTime;
@@ -81,17 +82,19 @@ public class Car : MonoBehaviour
         {
             speed = 0;
             Reversespeed = 0;
-        }
+            deadclock += Time.deltaTime;
 
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            transform.position = new Vector3(-12,3,-12);
-            transform.rotation = new Quaternion(0,0,0,0);
-            if (Health <= 0)
+            if (deadclock >= 2)
             {
+                transform.position = new Vector3(-43, 40, 22);
+                transform.rotation = new Quaternion(0, 0, 0, 1);
+                rb.linearVelocity = Vector3.zero;
+                rb.angularVelocity = Vector3.zero;
                 Health = 250;
+                deadclock = 0;
             }
         }
+
 
         if (PowerUpVersion == 1)
         {
@@ -172,7 +175,8 @@ public class Car : MonoBehaviour
         {
             TimeIndicator.text = timer.ToString();
 
-            timer += Time.deltaTime; 
+            timer += Time.deltaTime;
+            
 
             if (timer > 0.4)
             {
